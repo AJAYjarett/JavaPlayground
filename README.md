@@ -1,6 +1,6 @@
 # Java Playground
 
-This is where i practise and try new things in Java.
+This is where I practise and try new things in Java.
 
 # Table of contents
 
