@@ -3,6 +3,9 @@ package challenges.week_2.bubble_sort;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.Random;
+
 public class BubbleSortTests {
 
     @Test
@@ -15,5 +18,17 @@ public class BubbleSortTests {
         Assertions.assertArrayEquals(BubbleSort.bubbleSort(testingArray2), testArray2);
     }
 
+    @Test
+    public void longBubbleSortTests(){
+        int[] longTestArray = new int[1000];
+        for (int i = 0; i < longTestArray.length; i++) {
+            longTestArray[i] = i+1;
+        }
+        int[] longTestingArray = new int[1000];
+        for (int i = 0; i < longTestingArray.length; i++) {
+            longTestingArray[i] = longTestingArray.length-i;
+        }
+        Assertions.assertArrayEquals(BubbleSort.bubbleSort(longTestingArray),longTestArray);
+    }
 
 }
