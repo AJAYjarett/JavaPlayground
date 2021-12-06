@@ -1,8 +1,10 @@
 package challenges.week_2.palindrom_checker;
 
-import java.util.Arrays;
-
 public class PalindromeChecker {
+
+    public PalindromeChecker() {
+
+    }
 
     /*
     This method intakes a string and returns a boolean for if it is a palindrome or not.
@@ -24,9 +26,7 @@ public class PalindromeChecker {
         return wordToSplit.toLowerCase().toCharArray();
     }
 
-    public PalindromeChecker() {
 
-    }
 
     //This method is used to split a sentence to then check which words are palindromes and returns a boolean array
     public boolean[] sentenceChecker(String sentenceToCheck){
