@@ -10,7 +10,6 @@ public class BubbleSort {
     public static int[] bubbleSort(int[] arr){
         boolean sorted = false;
         int iterationCounter = 0;
-
         //Temp int to facilitate swapping ints in the array around
         int tempInt;
 
